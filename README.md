@@ -1,0 +1,1 @@
+Login hardcodé "admin:admin"
