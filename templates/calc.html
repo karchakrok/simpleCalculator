@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <title>Calculatrice</title>
+        <link rel='icon' type='image/png' href='/static/img/logo.png'>
+        <link rel="stylesheet" href="/static/calc.css">
+    </head>
+    <body>
+    <form name="calculatrice" id="calculatrice" method='get'>
+        <input type="text" name="resultat" id="resultat">
+        <div class="btn">
+            <input type="button" id="un" value="1" onclick="valeur(document.getElementById('un').value)">
+            <input type="button" id="deux" value="2" onclick="valeur(document.getElementById('deux').value)">
+            <input type="button" id="trois" value="3" onclick="valeur(document.getElementById('trois').value)">
+            <input type="button" id="addition" value="+" onclick="valeur(document.getElementById('addition').value)">
+        </div>
+        <div class="btn">
+            <input type="button" id="quatre" value="4" onclick="valeur(document.getElementById('quatre').value)">
+            <input type="button" id="cinq" value="5" onclick="valeur(document.getElementById('cinq').value)">
+            <input type="button" id="six" value="6" onclick="valeur(document.getElementById('six').value)">
+            <input type="button" id="soustraction" value="-" onclick="valeur(document.getElementById('soustraction').value)">
+        </div>
+        <div class="btn">
+            <input type="button" id="sept" value="7" onclick="valeur(document.getElementById('sept').value)">
+            <input type="button" id="huit" value="8" onclick="valeur(document.getElementById('huit').value)">
+            <input type="button" id="neuf" value="9" onclick="valeur(document.getElementById('neuf').value)">
+            <input type="button" id="multiplication" value="*" onclick="valeur(document.getElementById('multiplication').value)">
+        </div>
+        <div class="btn">
+            <input type="button" id="zero" value="0" onclick="valeur(document.getElementById('zero').value)">
+            <input type="button" id="decimal" value="." onclick="valeur(document.getElementById('decimal').value)">
+            <input type="button" id="division" value="/" onclick="valeur(document.getElementById('division').value)">
+            <input type="submit" id="egal" value="=" onclick="calculer()">
+        </div>
+        <div>
+            <button type="button" id="eff" value="" onclick="effacer(document.getElementById('eff').value)">Effacer</button>
+        </div>
+            </form>	
+        <p>Nous vous remercions d'utiliser notre calculatrice. Celle-ci fonctionne grâce à la fonction native "eval()" du langage JavaScript</p>
+        <p>Vous pouvez rentrer directement votre calcul dans la barre de résultat</p>
+    <script type="text/javascript" src="static\calc.js"></script>
+    </body> 
+</html>
